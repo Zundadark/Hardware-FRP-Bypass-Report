@@ -46,14 +46,50 @@ fastboot: error: Command failed
    <img width="412" height="434" alt="image" src="https://github.com/user-attachments/assets/e9ddd4d2-5ead-4549-b17b-b61048ba9885" />
 
    3. В момент замыкания в устройство был вставлен USB-кабель, подключенный к задней панели ПК напрямую в материнскую плату.
-   4. В интерфейсе UnlockTool была активирована конфигурация под процессор Snapdragon 695 [SM6375]. Из-за конфликтов криптографического хэша (PK_HASH) в базовом профиле Honor X9a, была выполнена подмена модели на аппаратный аналог-близнец — Honor X30 5G.
-<img width="286" height="156" alt="image" src="https://github.com/user-attachments/assets/be1fad91-cdc7-4282-8c07-d5c7d6a39efe" />
-
+   4. В интерфейсе UnlockTool была активирована конфигурация под процессор Snapdragon 695 [SM6375]. Из-за конфликтов криптографического хэша (PK_HASH) в базовом профиле Honor X9a, была выполнена подмена модели на аппаратный             аналог-близнец — Honor X30 5G.
    6. Запущена операция низкоуровневого стирания.
 
 Системный лог успешного выполнения:
 
 <img width="439" height="662" alt="image" src="https://github.com/user-attachments/assets/8d10d3f3-4b3d-433d-a687-96e918f2796e" />
+
+<details>
+<summary><b>Посмотреть текстовый лог (Кликните, чтобы раскрыть)</b></summary>
+
+```text
+[EDL] ERASE FRP
+
+Waiting for HS-USB QDLoader 9008... COM5
+Selected Model : Huawei Honor X30
+Code Name : ANY-AN00
+Operation : Erase FRP
+Authenticating... OK
+Retrieving server data... OK [268,29 KiB]
+Initializing data... OK
+Waiting for HS-USB QDLoader 9008... COM5
+Connecting to device... OK
+Handshaking... OK
+Reading bootloader info... OK
+Serial : [REDACTED] SoC : [Snapdragon 695 5G] [SM6375] [0x001A90E1]
+OEM : Honor [0x01A4] Model : Unknown [0x0000]
+PK_HASH : [REDACTED]
+PK_HASH : [REDACTED]
+Writing flash programmer... OK
+Connecting to flash programmer... OK
+Configuring device... OK
+Firehose config : UFS [Sector:4096] [Target:0] [Host:1048576]
+Reading partition map... OK - LU Count : 6
+Reading software info... OK [super]
+Model Name : RMO-NX1
+Manufacturer : HUAWEI
+EMUI Version : RMO-N21 7.1.0.337 (C185E7R2P4)
+Erasing FRP... OK
+Rebooting... OK
+
+UNLOCKTOOL 2026.09.02.0
+Elapsed time : 18 seconds
+```
+</details>
 
 
 ------------------------------
