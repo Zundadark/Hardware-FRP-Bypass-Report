@@ -1,4 +1,4 @@
-## [EDL] Hardware FRP Bypass Report: Honor X9a (RMO-NX1)## 
+## [EDL] Hardware FRP Bypass Report: Honor X9a (RMO-NX1) ## 
 1. Описание проблемы
 После выполнения жесткого сброса настроек (Hard Reset) через заводское меню восстановления на смартфоне Honor X9a (Matrix Camera) сработала встроенная система защиты FRP (Factory Reset Protection). По причине утери данных первоначальной учетной записи Google и PIN-кода экрана блокировки, стандартный доступ к операционной системе MagicOS (Android) был полностью заблокирован.
 
